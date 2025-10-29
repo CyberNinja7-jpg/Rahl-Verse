@@ -36,7 +36,12 @@ class HybridConfigManager {
     this.appName = null;
 
     this.initializeStorage();
-    this.checkHerokuAvailability();
+    this.checkHerokuAvailability(); // safe now ✅
+  }
+
+  // ✅ Added missing function
+  checkHerokuAvailability() {
+    console.log('⚙️ Heroku check skipped — running on Render or local environment.');
   }
 
   generateSessionId() {
