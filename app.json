@@ -1,0 +1,212 @@
+{
+  "name": "RAHL-XMD-QUANTUM",
+  "description": "The most powerful WhatsApp AI bot by Lord Rahl",
+  "keywords": ["bot", "node", "baileys", "whatsapp", "rahl-xmd", "quantum"],
+  "logo": "https://res.cloudinary.com/dptzpfgtm/image/upload/v1748879883/whatsapp_uploads/e3eprzkzxhwfx7pmemr5.jpg",
+  "repository": "https://github.com/lordrahl2-sys/RAHL-XMD-QUANTUM",
+  "success_url": "/",
+  "stack": "heroku-24",
+  "env": {
+    "PREFIX": {
+      "description": "Choose your prefix for your bot",
+      "value": ".",
+      "required": true
+    },
+    "AUTO_REJECT_CALL": {
+      "description": "Auto reject incoming calls (yes/no)",
+      "value": "yes",
+      "required": false
+    },
+    "AUTO_BIO": {
+      "description": "Auto update bot bio (yes/no)",
+      "value": "yes",
+      "required": false
+    },
+    "AUTO_REPLY_STATUS": {
+      "description": "Notify people when you view their status (yes/no)",
+      "value": "no",
+      "required": false
+    },
+    "REPLY_STATUS_TEXT": {
+      "description": "Message to send after viewing someone's status",
+      "value": "👁️ Your status has been seen by Lord Rahl ⚡",
+      "required": false
+    },
+    "AUTO_READ_STATUS": {
+      "description": "Automatically read viewed statuses (yes/no)",
+      "value": "yes",
+      "required": false
+    },
+    "AUTO_DOWNLOAD_STATUS": {
+      "description": "Automatically download statuses (yes/no)",
+      "value": "no",
+      "required": false
+    },
+    "AUTO_READ": {
+      "description": "Mark messages as read automatically (yes/no)",
+      "value": "yes",
+      "required": false
+    },
+    "BOT_NAME": {
+      "description": "Set your bot’s name",
+      "value": "RAHL-XMD",
+      "required": false
+    },
+    "BOT_URL": {
+      "description": "Image or video URL for your bot menu",
+      "value": "https://res.cloudinary.com/dptzpfgtm/image/upload/v1748879883/whatsapp_uploads/e3eprzkzxhwfx7pmemr5.jpg",
+      "required": false
+    },
+    "PUBLIC_MODE": {
+      "description": "Run bot in public or private mode (yes/no)",
+      "value": "yes",
+      "required": false
+    },
+    "HEROKU_API_KEY": {
+      "description": "Your Heroku API key (optional)",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Your Heroku app name (optional)",
+      "value": "",
+      "required": false
+    },
+    "OWNER_NUMBER": {
+      "description": "Owner WhatsApp number (e.g. 2547XXXXXXX)",
+      "value": "",
+      "required": false
+    },
+    "STATUS_REACT_EMOJIS": {
+      "description": "Emojis for auto react on statuses",
+      "value": "⚡,🔥,💀",
+      "required": false
+    },
+    "AUTO_REACT": {
+      "description": "Auto react to chats (yes/no)",
+      "value": "no",
+      "required": false
+    },
+    "AUTO_REACT_STATUS": {
+      "description": "Auto react to statuses (yes/no)",
+      "value": "yes",
+      "required": false
+    },
+    "OWNER_NAME": {
+      "description": "Bot owner name",
+      "value": "Lord Rahl",
+      "required": false
+    },
+    "SESSION_ID": {
+      "description": "Paste your Session ID here",
+      "value": "",
+      "required": true
+    },
+    "STARTING_BOT_MESSAGE": {
+      "description": "Enable start-up message (yes/no)",
+      "value": "yes",
+      "required": true
+    },
+    "PRESENCE": {
+      "description": "Presence mode (typing, recording, online)",
+      "value": "typing",
+      "required": false
+    },
+    "ANTIDELETE_SENT_INBOX": {
+      "description": "Send anti-delete messages to inbox (yes/no)",
+      "value": "yes",
+      "required": false
+    },
+    "ANTIDELETE_RECOVER_CONVENTION": {
+      "description": "Recover deleted messages (yes/no)",
+      "value": "no",
+      "required": false
+    },
+    "GROUPANTILINK": {
+      "description": "Enable group anti-link (yes/no)",
+      "value": "no",
+      "required": false
+    },
+    "CHATBOT": {
+      "description": "Enable AI text chatbot (yes/no)",
+      "value": "no",
+      "required": false
+    },
+    "WELCOME_MESSAGE": {
+      "description": "Send welcome message in groups (yes/no)",
+      "value": "yes",
+      "required": false
+    },
+    "GOODBYE_MESSAGE": {
+      "description": "Send goodbye message in groups (yes/no)",
+      "value": "yes",
+      "required": false
+    },
+    "AUDIO_CHATBOT": {
+      "description": "Enable audio chatbot (yes/no)",
+      "value": "no",
+      "required": false
+    },
+    "MENU_TOP_LEFT": {
+      "description": "Menu top left style",
+      "value": "╭─❖",
+      "required": false
+    },
+    "MENU_BOT_NAME_LINE": {
+      "description": "Menu bot name line",
+      "value": "│ 👑 ",
+      "required": false
+    },
+    "MENU_BOTTOM_LEFT": {
+      "description": "Menu bottom left corner",
+      "value": "╰┬❖",
+      "required": false
+    },
+    "MENU_GREETING_LINE": {
+      "description": "Menu greeting line",
+      "value": "├─✨ ",
+      "required": false
+    },
+    "MENU_DIVIDER": {
+      "description": "Menu divider",
+      "value": "│└────────⧽",
+      "required": false
+    },
+    "MENU_USER_LINE": {
+      "description": "Menu user line",
+      "value": "│🕵️ ",
+      "required": false
+    },
+    "MENU_DATE_LINE": {
+      "description": "Menu date line",
+      "value": "│📅 ",
+      "required": false
+    },
+    "MENU_TIME_LINE": {
+      "description": "Menu time line",
+      "value": "│⏰ ",
+      "required": false
+    },
+    "MENU_STATS_LINE": {
+      "description": "Menu stats line",
+      "value": "│⚙️ ",
+      "required": false
+    },
+    "MENU_BOTTOM_DIVIDER": {
+      "description": "Bottom divider",
+      "value": "╰────────────⧽",
+      "required": false
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
