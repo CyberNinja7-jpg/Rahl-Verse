@@ -5,6 +5,7 @@
 
 const axios = require('axios');
 const cheerio = require('cheerio');
+const express = require('express');
 const rahl = require("./config");
 
 async function fetchHomeUrl() {
@@ -30,3 +31,17 @@ async function fetchHomeUrl() {
 }
 
 fetchHomeUrl();
+
+// ===============================
+// ⚡ Render Keep-Alive Server ⚡
+// ===============================
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+  res.send('👑 RAHL XMD Quantum Bot is alive and ruling the Render realm!');
+});
+
+app.listen(PORT, () => {
+  console.log(`✅ Keep-alive server active on port ${PORT}`);
+});
